@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/recycler_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginRight="10dp"
+    android:background="@android:color/background_light"
+    android:orientation="vertical"
+    android:visibility="visible"
+    app:cardBackgroundColor="@android:color/background_light">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/background_light"
+        android:orientation="horizontal"
+        android:paddingTop="6dp"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginLeft="0dp"
+            android:background="@android:color/background_light"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/but_reject"
+                android:layout_width="34dp"
+                android:layout_height="46dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="16dp"
+                android:contentDescription="TODO"
+                app:srcCompat="@drawable/cancel" />
+
+            <LinearLayout
+                android:layout_width="61dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/but_accept"
+                    android:layout_width="match_parent"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="17dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/rate" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="90dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/but_tracking"
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="7dp"
+                    android:contentDescription="TODO"
+                    android:paddingRight="5dp"
+                    app:srcCompat="@drawable/tracking" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="137dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/service_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="3dp"
+                    android:text="اعداد كعكة"
+                    android:textColor="@android:color/black"
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/service_date"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:contentDescription="service_id"
+                        android:text="20 ابريل,2019"
+                        android:textColor="@android:color/darker_gray"
+                        android:textSize="12dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="59dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:popupBackground="#FDFDFD">
+
+                <ImageView
+                    android:id="@+id/imageView8"
+                    android:layout_width="59dp"
+                    android:layout_height="42dp"
+
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="7dp"
+                    android:contentDescription="TODO"
+                    app:srcCompat="@drawable/other" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

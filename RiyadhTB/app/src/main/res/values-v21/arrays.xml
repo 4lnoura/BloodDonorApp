@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Categories">
+        <item>خدمات فنية</item>
+        <item>خدمات السيارات </item>
+        <item>خدمات تعلمية</item>
+        <item>خدمات منزلية</item>
+        <item>خدمات الترجمة</item>
+        <item>خدمات الحاسب</item>
+        <item>خدمات اخرى</item>
+
+    </string-array>
+
+
+</resources>

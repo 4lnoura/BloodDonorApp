@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    android:orientation="vertical"
+    tools:context=".Main.MyRequestDetails">
+
+
+    <com.google.android.gms.maps.MapView
+        android:id="@+id/map_view"
+        android:layout_width="380dp"
+        android:layout_height="153dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="390dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="@android:color/background_light">
+
+
+        <LinearLayout
+            android:id="@+id/deatlse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical"
+            android:paddingTop="15dp">
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/title_MyRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="2dp"
+                    android:layout_marginRight="2dp"
+                    android:layout_toStartOf="@+id/textView11"
+                    android:layout_toLeftOf="@+id/textView11"
+                    android:layout_weight="1"
+                    android:text="إعداد كيكه "
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="العنوان : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/Desc_MyRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toStartOf="@+id/desc"
+                    android:layout_toLeftOf="@+id/desc"
+                    android:layout_weight="1"
+                    android:text="إعداد كيكه بنكهة الفراوله والفانيليه وارويد توصيلها لمنزلي "
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="الوصف : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/Type_MyRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:layout_marginEnd="17dp"
+                    android:layout_marginRight="17dp"
+                    android:layout_toStartOf="@+id/type"
+                    android:layout_toLeftOf="@+id/type"
+                    android:layout_weight="1"
+                    android:text="الطبخ "
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="الفئة : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+
+                <TextView
+                    android:id="@+id/responseBy_MyRequest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginEnd="6dp"
+                    android:layout_marginRight="6dp"
+                    android:layout_toStartOf="@+id/responseBy"
+                    android:layout_toLeftOf="@+id/responseBy"
+                    android:layout_weight="1"
+                    android:text="لم يتم الاجابة حتى الان"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/responseBy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="المستلم : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp">
+
+                <TextView
+                    android:id="@+id/state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_weight="1"
+                    android:paddingRight="15dp"
+                    android:text="حالة الطلب : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="24sp"
+                    android:visibility="invisible" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/Liner_Of_reject"
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="60dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:background="@color/browser_actions_bg_grey"
+                    android:src="@drawable/reject" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="112dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_weight="1"
+                    android:text="تم رفض الطلب"
+                    android:textColor="@color/LineColore"
+                    android:textSize="20sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="207dp"
+            android:layout_marginTop="250dp"
+            android:background="@android:color/background_light">
+
+            <com.baoyachi.stepview.HorizontalStepView
+                android:id="@+id/step_view"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_centerInParent="true"
+
+                android:scrollbarSize="14dp" />
+
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

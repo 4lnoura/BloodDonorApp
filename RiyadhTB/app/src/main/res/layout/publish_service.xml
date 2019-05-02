@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_light"
+    tools:context=".Main.PublishService"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginBottom="40dp">
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/publish_pic" />
+</LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="3dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="149dp"
+            android:layout_height="156dp"
+            android:background="@color/cardview_light_background"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:text="الأكثر طلبًا من منطقتك"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/recomation"
+                android:layout_width="75dp"
+                android:layout_height="59dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/re" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/p_title"
+                    android:layout_width="204dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:hint="اعداد كيكة "
+                    android:inputType="textPersonName"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="العنوان"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/p_des"
+                    android:layout_width="202dp"
+                    android:layout_height="105dp"
+                    android:layout_marginLeft="3dp"
+                    android:hint="اعداد كعكة ميلاد بنكهة الفراولة ووضع شموع برقم ١٣ "
+                    android:inputType="textCapSentences|textMultiLine"
+                    android:maxLength="1000"
+                    android:maxLines="4"
+                    android:textColorHint="@android:color/darker_gray" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="الوصف"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:paddingLeft="120dp">
+
+        <Spinner
+            android:id="@+id/p_spinner"
+            android:layout_width="146dp"
+            android:layout_height="32dp"
+            android:background="@color/colorAccent"
+            android:dropDownSelector="@android:color/darker_gray"
+            android:entries="@array/Categories"
+            android:popupBackground="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="70dp"
+            android:text="فئة طلبك"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="20dp">
+
+        <Button
+            android:id="@+id/p_location"
+            android:layout_width="145dp"
+            android:layout_height="29dp"
+            android:layout_marginStart="103dp"
+            android:layout_marginLeft="103dp"
+            android:layout_marginRight="10dp"
+            android:background="@color/colorAccent"
+            android:onClick="serviceLoc"
+            android:shadowColor="@color/colorAccent"
+            android:shadowDx="0"
+            android:shadowDy="0"
+            android:shadowRadius="5"
+            android:text="تحديد الموقع"
+            android:textColor="@color/sekizbit_switch_text_selected"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="29dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="10dp"
+            android:text="موقع استلام الخدمة"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:weightSum="2">
+
+        <RadioGroup
+            android:id="@+id/TypeRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/ForAll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="20dp"
+                android:checked="true"
+                android:onClick="onRadioButtonClicked"
+                android:text="لجميع المستخدمين"
+                android:textColor="@android:color/darker_gray" />
+
+            <RadioButton
+                android:id="@+id/ForOne"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onRadioButtonClicked"
+                android:text="لمستخدم محدد"
+                android:textColor="@android:color/darker_gray" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="نشر الطلب"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/p_text_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="100dp"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <EditText
+            android:id="@+id/p_username"
+            android:layout_width="147dp"
+            android:layout_height="wrap_content"
+            android:hint="Person554"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="15dp"
+            android:text="اسم المستخدم المحدد"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/publish_button"
+        android:layout_width="132dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="5dp"
+
+        android:layout_marginRight="142dp"
+
+        android:background="@color/colorAccent"
+        android:text=" نشر الطلب"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>

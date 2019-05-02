@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.noura.riyadh_tb">
+
+    <!--
+         The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but you must specify either coarse or fine
+         location permissions for the 'MyLocation' functionality.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true"
+        tools:ignore="ManifestOrder" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Riyadh-TimeBank"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:replace="android:label">
+        <activity android:name=".UserProfile.EditMyProfile" />
+        <!--
+             The API key for Google Maps-based APIs is defined as a string resource.
+             (See the file "res/values/google_maps_api.xml").
+             Note that the API key is linked to the encryption key used to sign the APK.
+             You need a different API key for each encryption key, including the release key that is used to
+             sign the APK for publishing.
+             You can define the keys for the debug and release targets in src/debug/ and src/release/.
+        -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Main.NavigateGoogleMap"
+            android:label="@string/title_activity_navigate_google_map" />
+        <activity
+            android:name=".Main.ViewLocationOfAcceptedService"
+            android:label="@string/title_activity_view_location_of_accepted_service" />
+        <activity android:name=".Main.MyRequest" />
+        <activity android:name=".StartPages.Start">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".StartPages.Login" />
+        <activity android:name=".StartPages.SignUp" />
+        <activity android:name=".Main.SearchForUsers" />
+        <activity
+            android:name=".Main.Timeline"
+            android:label="@string/title_activity_timeline"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.PublishService"
+            android:label="Publish For Service" />
+        <activity android:name=".Main.DonateTime" />
+        <activity android:name=".StartPages.ForgotPassword" />
+        <activity android:name=".StartPages.About" />
+        <activity android:name=".Main.MyResponse" />
+        <activity android:name=".Main.DetailsOfService" />
+        <activity android:name=".Main.MyRequestDetails" />
+        <activity android:name=".UserProfile.User_Profile" />
+
+        <meta-data android:name="com.onesignal.NotificationOpened.DEFAULT"  android:value="DISABLE" />
+
+        <activity
+            android:name=".UserProfile.MyProfile"
+            android:label="@string/title_activity_my_profile"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Main.ServiceLocation"
+            android:label="@string/title_activity_service_location"></activity>
+    </application>
+
+</manifest>

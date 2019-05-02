@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".StartPages.SignUp">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/uploadImage"
+        android:layout_width="122dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:onClick="onClick"
+        android:src="@drawable/placeholder_cam" />
+
+
+    <EditText
+        android:id="@+id/signup_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="132dp"
+        android:ems="10"
+        android:hint="الاسم الثنائي"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/signup_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="187dp"
+        android:ems="10"
+        android:hint="اسم المستخدم"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/signup_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signup_name"
+        android:layout_alignLeft="@+id/signup_name"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="242dp"
+        android:ems="10"
+        android:hint="البريد الالكتروني"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/signup_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signup_name"
+        android:layout_alignLeft="@+id/signup_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="258dp"
+        android:ems="10"
+        android:hint="الرقم السري"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/confirm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/signup_name"
+        android:layout_alignLeft="@+id/signup_name"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="202dp"
+        android:ems="10"
+        android:hint="تاكيد الرقم السري "
+        android:inputType="textPassword" />
+
+
+    <LinearLayout
+        android:layout_width="309dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="135dp"
+        android:gravity="center_vertical">
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fabDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_marginRight="30dp"
+            android:clickable="true"
+            app:srcCompat="@android:drawable/ic_menu_today" />
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tvDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textView3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="30dp"
+            android:text="اليوم / الشهر / السنة"
+            android:textAllCaps="false"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تاريخ الميلاد"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="93dp"
+        android:weightSum="3">
+
+        <RadioGroup
+            android:id="@+id/statusRadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="50dp"
+                android:checked="true"
+                android:text="ذكر" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="انثى" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="الجنس"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:background="#4a4a4a"
+        android:onClick="onClick"
+        android:text="انشاء حساب"
+        android:textColor="@android:color/background_light" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/signup_password"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/signup_name"
+        android:layout_toRightOf="@+id/signup_name"
+        app:srcCompat="@drawable/ic_lock"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/confirm"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/signup_name"
+        android:layout_toRightOf="@+id/signup_name"
+        app:srcCompat="@drawable/ic_lock"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView55"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignBottom="@+id/signup_email"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/signup_name"
+        android:layout_toRightOf="@+id/signup_name"
+        app:srcCompat="@drawable/ic_mail"
+        tools:ignore="DuplicateIds,VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignBottom="@+id/signup_username"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/signup_name"
+        android:layout_toRightOf="@+id/signup_name"
+        app:srcCompat="@drawable/ic_user"
+        tools:ignore="VectorDrawableCompat" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignBottom="@+id/signup_name"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="2dp"
+        android:layout_toEndOf="@+id/signup_name"
+        android:layout_toRightOf="@+id/signup_name"
+        app:srcCompat="@drawable/ic_id"
+        tools:ignore="VectorDrawableCompat" />
+</RelativeLayout>

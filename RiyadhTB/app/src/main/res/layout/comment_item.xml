@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/parent_comment"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardBackgroundColor="?android:attr/panelBackground"
+    android:layout_marginTop="10dp">
+
+    <RelativeLayout
+        android:id="@+id/parent_layout3"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:id="@+id/mylist2"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@color/cardview_light_background"
+            android:orientation="horizontal">
+
+
+            <LinearLayout
+                android:layout_width="330dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingRight="10dp">
+
+                <TextView
+                    android:id="@+id/comment_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginTop="20dp"
+                    android:text="الاسم"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/comment_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="اسم المستخدم"
+                    android:textSize="12sp" />
+
+
+                <TextView
+                    android:id="@+id/comment_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="التعليق"
+                    android:textColor="#000"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/comment_image"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/user2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

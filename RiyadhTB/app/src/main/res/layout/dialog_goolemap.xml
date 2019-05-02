@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="398dp"
+        android:layout_height="386dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:paddingRight="20dp"
+        app:cardBackgroundColor="@android:color/background_light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="14dp">
+
+        <LinearLayout
+            android:layout_width="368dp"
+            android:layout_height="340dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/background_light"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="297dp"
+                android:layout_height="77dp"
+                android:layout_gravity="right"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/text_Name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:paddingLeft="150dp"
+                        android:paddingTop="15dp"
+                        android:paddingRight="16dp"
+                        android:text="الاسم "
+                        android:textColor="@color/colorAccent"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/text_userName1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="150dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="16dp"
+                        android:text="اسم المستخدم"
+                        android:textColor="@android:color/darker_gray"
+
+                        android:textSize="16sp" />
+
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="90dp"
+                    android:layout_height="90dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="90dp"
+                        android:layout_height="70dp"
+                        android:paddingTop="5dp"
+                        android:src="@drawable/user3" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/emailUSD"
+                    android:layout_width="227dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:gravity="right"
+                    android:text="example@anymail.com"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="البريد الإلكتروني : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp">
+
+
+                <TextView
+                    android:id="@+id/timeS"
+                    android:layout_width="254dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="11:30:45"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="108dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:lineSpacingExtra="20dp"
+                    android:text="وقت الطلب : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/dateS"
+                    android:layout_width="245dp"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="150dp"
+                    android:text="10/10/1010"
+                    android:textColor="@android:color/darker_gray"
+
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="4dp"
+                    android:text="تاريخ الطلب : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="368dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/text_title1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="حل واجب الرياضيات"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginRight="8dp"
+                    android:text="العنوان :"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/text_desc1"
+                    android:layout_width="266dp"
+                    android:layout_height="match_parent"
+                    android:gravity="right"
+                    android:text="التفاصيل"
+                    android:textColor="@android:color/darker_gray"
+
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="80dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="10dp"
+                    android:text="التفاصيل : "
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="379dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+
+                <TextView
+                    android:id="@+id/text_type1"
+                    android:layout_width="292dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:text="الفئه"
+                    android:textColor="@android:color/darker_gray"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="الفئه : "
+                    android:textAlignment="center"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="174dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/Accept_button"
+                    android:layout_width="132dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="3dp"
+                    android:background="@color/colorAccent"
+                    android:text="قبول الطلب"
+                    android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</android.support.constraint.ConstraintLayout>

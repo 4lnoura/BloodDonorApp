@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#666361</color>
+    <color name="colorPrimaryDark">#2f2e2d</color>
+    <color name="colorAccent">#E8C061</color>
+
+    <color name="back_layout">#F2F5F7</color>
+
+    <color name="LineColore">#133073</color>
+    <color name="sekizbit_switch_background">#c19953</color>
+    <color name="sekizbit_switch_stroke">#d3a658</color>
+    <color name="sekizbit_switch_thumb">#ffffff</color>
+
+
+    <color name="sekizbit_switch_text_selected">@android:color/black</color>
+    <color name="sekizbit_switch_text_unselected">@android:color/white</color>
+
+
+
+</resources>

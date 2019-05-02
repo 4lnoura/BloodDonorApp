@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD"
+    tools:context=".Main.MyResponse">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/sekizbit_switch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDFDFD"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/sekizbit_switch_btn_left"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sekizbit_selector_btn_left"
+                android:text="طلبلات العملاء"
+                android:textColor="@drawable/sekizbit_selector_btn_text_color"
+                android:textSize="15dp" />
+
+            <Button
+                android:id="@+id/sekizbit_switch_btn_right"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="-1dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/sekizbit_selector_btn_right"
+                android:text="الطلبات المباشرة"
+                android:textColor="@drawable/sekizbit_selector_btn_text_color"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <android.support.v7.widget.AppCompatImageView
+                android:id="@+id/res_notify"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="220dp"
+                android:src="@drawable/notify"
+                android:visibility="gone" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp">
+
+        <TextView
+            android:id="@+id/res_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sorry there is no services!"
+            android:visibility="gone" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/res_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#FDFDFD" />
+    </FrameLayout>
+
+
+</RelativeLayout>
