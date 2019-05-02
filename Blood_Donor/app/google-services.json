@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "15668674752",
+    "firebase_url": "https://bloodapp-1997.firebaseio.com",
+    "project_id": "bloodapp-1997",
+    "storage_bucket": "bloodapp-1997.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:15668674752:android:13cbd658eae044cc",
+        "android_client_info": {
+          "package_name": "com.blood_donor"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "15668674752-js03eurfjq3m72qaa1n5g81fbcco3fld.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPP-eooyySJya1YJ39CKAvD6yJZEkCGYw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

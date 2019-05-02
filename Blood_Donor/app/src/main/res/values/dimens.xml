@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_tiny">4dp</dimen>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_normal">16dp</dimen>
+    <dimen name="margin_large">32dp</dimen>
+
+    <dimen name="padding_tiny">4dp</dimen>
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_normal">16dp</dimen>
+    <dimen name="padding_large">32dp</dimen>
+    <dimen name="menu_button_height">100dp</dimen>
+    <dimen name="image_upload_size">150dp</dimen>
+    <dimen name="user_profile_size">60dp</dimen>
+</resources>
